@@ -1,0 +1,45 @@
+/* index.css */
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-right: 10px;
+    position: relative;
+  }
+  
+  ul ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+  
+  ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  ul ul ul {
+    margin-left: 10px;
+  }
+  
+  /* Yeni Eklenen Stiller */
+  ul ul li {
+    display: inline-block; /* Ana menünün altındaki menüleri yan yana dizer */
+    margin: 0;
+  }
+  
+  ul ul li a {
+    display: block;
+  }
+  
+  ul ul ul li {
+    display: block;
+  }
+  
